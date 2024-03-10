@@ -3,12 +3,9 @@ from sklearn.tree import DecisionTreeClassifier, export_text
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
-# Carregando dados do arquivo CSV com encoding='latin1'
+# Carregando dados do arquivo CSV
 file_path = r'C:\Users\larin\Desktop\PUC\IA\Bases de dados\Lista 02\restaurantev2.csv'
 df = pd.read_csv(file_path, encoding='latin1', delimiter=';')
-
-# Exibindo o cabeçalho do DataFrame para verificar os nomes das colunas
-print(df.head())
 
 # Ajustando o código para usar os nomes reais das colunas
 X = df.drop(['Exemplo', 'conc'], axis=1)
@@ -28,9 +25,9 @@ column_transformer = ColumnTransformer(
 X_encoded = column_transformer.fit_transform(X)
 
 # Criando modelos de árvore de decisão
-id3_tree = DecisionTreeClassifier(criterion='entropy')
-c45_tree = DecisionTreeClassifier(criterion='entropy')  # C4.5 também usa entropia
-cart_tree = DecisionTreeClassifier(criterion='gini')  # CART usa índice de Gini
+id3_tree = DecisionTreeClassifier(criterion='entropy') # Entropia
+c45_tree = DecisionTreeClassifier(criterion='entropy') # Entropia
+cart_tree = DecisionTreeClassifier(criterion='gini') # Índice de Gini
 
 # Treinando os modelos
 id3_tree.fit(X_encoded, y)
