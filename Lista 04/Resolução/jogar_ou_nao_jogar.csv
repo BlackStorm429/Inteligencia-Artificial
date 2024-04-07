@@ -1,0 +1,15 @@
+Dia,Aparência,Temperatura,Umidade,Ventando,Jogar
+d1,Sol,Quente,Alta,Não,Não
+d2,Sol,Quente,Alta,Sim,Não
+d3,Nublado,Quente,Alta,Não,Sim
+d4,Chuva,Agradável,Alta,Não,Sim
+d5,Chuva,Fria,Normal,Não,Sim
+d6,Chuva,Fria,Normal,Sim,Não
+d7,Nublado,Fria,Normal,Sim,Sim
+d8,Sol,Agradável,Alta,Não,Não
+d9,Sol,Fria,Normal,Não,Sim
+d10,Chuva,Agradável,Normal,Não,Sim
+d11,Sol,Agradável,Normal,Sim,Sim
+d12,Nublado,Agradável,Alta,Sim,Sim
+d13,Nublado,Quente,Normal,Não,Sim
+d14,Chuva,Agradável,Alta,Sim,Não
